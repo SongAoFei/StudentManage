@@ -1,0 +1,10 @@
+D:\_Project\WebStudent\WebStudent\bin\WebStudent.dll
+D:\_Project\WebStudent\WebStudent\bin\WebStudent.pdb
+D:\_Project\WebStudent\WebStudent\obj\Debug\WebStudent.csprojResolveAssemblyReference.cache
+D:\_Project\WebStudent\WebStudent\obj\Debug\WebStudent.dll
+D:\_Project\WebStudent\WebStudent\obj\Debug\WebStudent.pdb
+E:\源码审核\2015\6月\学生管理系统\WebStudent\WebStudent\bin\WebStudent.dll
+E:\源码审核\2015\6月\学生管理系统\WebStudent\WebStudent\bin\WebStudent.pdb
+E:\源码审核\2015\6月\学生管理系统\WebStudent\WebStudent\obj\Debug\WebStudent.csprojResolveAssemblyReference.cache
+E:\源码审核\2015\6月\学生管理系统\WebStudent\WebStudent\obj\Debug\WebStudent.dll
+E:\源码审核\2015\6月\学生管理系统\WebStudent\WebStudent\obj\Debug\WebStudent.pdb

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebStudent.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Css/layout.css?id=34" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div class="logo">学生信息管理系统</div>
+            <div class="header-info">
+                <asp:LinkButton ID="btnUserName" runat="server">登录用户</asp:LinkButton>
+                <asp:LinkButton ID="btnLogout" runat="server" PostBackUrl="~/Default.aspx">注销</asp:LinkButton>
+            </div>
+        </div>
+        <div class="left">
+            <asp:TreeView ID="TreeView1" runat="server" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
+                <Nodes>
+                    <asp:TreeNode NavigateUrl="~/Frm/Main.aspx" Text="首页" Value="首页"></asp:TreeNode>
+                    <asp:TreeNode Text="信息管理" Value="信息管理">
+                        <asp:TreeNode Text="学生管理" Value="学生管理" NavigateUrl="~/Frm/StudentManage.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="添加学生" Value="添加学生" NavigateUrl="~/Frm/StudentInfo.aspx"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="新建节点" Value="新建节点">
+                        <asp:TreeNode Text="用户管理" Value="用户管理" NavigateUrl="~/Frm/UserManage.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="修改密码" Value="修改密码" NavigateUrl="~/Frm/UpdatePassoword.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="注销" Value="注销"></asp:TreeNode>
+                    </asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+        </div>
+        <div class="right">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">Build By Helloworld</div>
+    </form>
+</body>
+</html>
